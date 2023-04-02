@@ -13,6 +13,7 @@ export default function Home() {
     setCounter(counter - 1);
   }
 
+  // cada que counter cambie se ejecuta la función 
   useEffect(()=> {
     if(counter < 5) {
       setMessage('Sin alerta');
@@ -25,7 +26,7 @@ export default function Home() {
 
   return (
     <div className='flex flex-col justify-center items-center w-full p-10'>
-      <span>Contador: {counter}</span>
+      <span>Contador: {counter}</span> 
       <div className='flex gap-4'>
         <button
         onClick={decrease} 
