@@ -3,8 +3,8 @@ import Form from './Form';
 
 const FormInfoPersonal = () => {
   const { formData, changeFormData } = useFormData({
-    name: 'Daniel',
-    lastName: 'Saldarriaga',
+    name: '',
+    lastName: '',
     email: '',
     birthday: '',
   });
